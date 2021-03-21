@@ -1,0 +1,34 @@
+summary_writer:
+  log_dir: "logs"
+
+datasets:
+  train:
+    anno_json: "/mnt/d/Kajatin/Documents/data/train_mini.json"
+    images: "/mnt/d/Kajatin/Documents/data/"
+  valid:
+    anno_json: "/mnt/d/Kajatin/Documents/data/val.json"
+    images: "/mnt/d/Kajatin/Documents/data/"
+  normalize:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+dataloaders:
+  train:
+    batch_size: 16
+    shuffle: True
+  valid:
+    batch_size: 16
+    shuffle: False
+
+train:
+  save_path: ""
+  pretrained_path: ""
+  lr: 0.001
+  momentum: 0.9
+  start_epoch: 0
+  end_epoch: 3
+
+network:
+  input_dims: [256, 256]
+  pretrained: True
+  out_dim: 10000
