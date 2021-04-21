@@ -3,21 +3,21 @@ summary_writer:
 
 datasets:
   train:
-    anno_json: "/mnt/d/Kajatin/Documents/data/train_mini.json"
-    images: "/mnt/d/Kajatin/Documents/data/"
+    anno_json: "/mnt/d/data/train_mini.json"
+    images: "/mnt/d/data/"
   valid:
-    anno_json: "/mnt/d/Kajatin/Documents/data/val.json"
-    images: "/mnt/d/Kajatin/Documents/data/"
+    anno_json: "/mnt/d/data/val.json"
+    images: "/mnt/d/data/"
   normalize:
     mean: [0.485, 0.456, 0.406]
     std: [0.229, 0.224, 0.225]
 
 dataloaders:
   train:
-    batch_size: 16
+    batch_size: 32
     shuffle: True
   valid:
-    batch_size: 16
+    batch_size: 32
     shuffle: False
 
 train:

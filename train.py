@@ -29,6 +29,7 @@ writer = SummaryWriter(
 
 # CUDA setup
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("Using device: {}".format(device))
 
 # Create network
 net = iNet(config["network"])

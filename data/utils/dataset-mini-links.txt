@@ -1,2 +1,4 @@
 https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train_mini.tar.gz
 https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train_mini.json.tar.gz
+https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.tar.gz
+https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.json.tar.gz
